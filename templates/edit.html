@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+{% load static %}
+
+<section class="content">
+    <div class="header">         
+        <a href="/"><img class="logo" src="{% static '/img/logo.jpg' %}"></a>
+        <h1><a href="/" style="text-decoration:none; color:black;">Edit</h1></a></div>
+    <section class="post_form">
+        <form action="/edit/{{ posts.id }}/" method="POST" enctype="multipart/form-data"> 
+            {% csrf_token %}
+              
+                <input class="name-input" type="text" name="name" placeholder="Name" value="{{ posts.name }}" required>
+                <input class="text-body" name="body" placeholder="Type anything" value="{{ posts.body }}" required></input> <br>
+                <img src="{{ posts.picture.url }}" style="width:250px; height:200px; padding-bottom:10px;" onerror="this.style.display='none';" alt=""> <br>
+                <input class="choose-file" type="file" name="picture"> <br>
+                <div class="banner">
+                    <a href="{% url 'index' %}" id="cancel">Cancel</a>
+                    <input id="tweet" type="submit" value="Update">
+                </div>
+        </form>
+</section>
+
+{% endblock %}

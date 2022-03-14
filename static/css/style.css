@@ -1,0 +1,158 @@
+/*
+Common
+*******************************/
+
+.content {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+}
+.content .logo {
+    width: 60px;
+}
+
+/*
+Form
+*******************************/
+
+.post_form form {
+    padding: 35px 20px;
+    min-width: 90%;
+    border-top: 1px solid #ccc;
+}
+
+.post_form form img {
+    
+}
+
+.post_form img {
+    margin-right: 15px;
+}
+.post_form .name-input {
+    width: 77.5%;
+    height: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: rgb(223, 243, 252);
+}
+
+a {
+    text-decoration: none;
+}
+
+.post_form .text-body {
+    width: 70%;
+    padding: 30px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+}
+
+.post_form .tweet-button {
+    height: 35px;
+    width: 16%;
+    color: white;
+    background-color: rgb(117, 170, 206);
+    border: 1px solid rgb(158, 215, 253);
+    border-radius: 9%;
+    cursor: pointer;
+}
+
+#tweet {
+    height: 35px;
+    width: 20%;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(117, 170, 206);
+    border: 1px solid rgb(158, 215, 253);
+    border-radius: 9%;
+    cursor: pointer;
+}
+
+.banner {
+    padding-top: 20px;
+}
+
+#cancel {
+    text-decoration: none;
+    border: 1px solid;
+    background-color: gray;
+    color: white;
+    padding: 8px;
+}
+
+/*
+Posts
+*******************************/
+
+.posts ul {
+    padding: 0;
+    border-top: 1px solid #ccc;
+}
+
+.posts li {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 40px;
+    position: relative;
+}
+
+.posts li .user-img {
+    flex-basis: 15%;
+}
+
+.posts li .user-img img {
+    width: 60%;
+}
+
+.posts li .name_body {
+    flex-basis: 85%;
+}
+
+.posts li .options {
+    display: none;
+    text-decoration: none;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 13px;
+    background-color: white;
+    border: 1px solid #ccc;
+    top: 0px;
+    right: 50px;
+    padding: 7px 7px;
+}
+
+.posts li .js-options {
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px
+}
+
+.posts .name {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.posts .date-time {
+    color: gray;
+    display: inline-block;
+}
+
+
+/*
+Media
+*******************************/
+
+@media screen and (max-width: 500px) {
+    .posts li .name_body .name {
+        font-size: 20px;
+    }
+}
