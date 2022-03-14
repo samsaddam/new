@@ -83,23 +83,23 @@ WSGI_APPLICATION = 'webforum.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-"""DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}"""
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ddaa8lvrspr7n',
-        'USER': 'jltxqtfrgosjuq',
-        'HOST': 'ec2-3-212-45-192.compute-1.amazonaws.com',
-        'PORT': 5432,
-        'PASSWORD': '45c5cac1a6c555f3a2b099d1721fa20e698d2f7b6bab0f534023760b9489f90e',
-    }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'ddaa8lvrspr7n',
+#         'USER': 'jltxqtfrgosjuq',
+#         'HOST': 'ec2-3-212-45-192.compute-1.amazonaws.com',
+#         'PORT': 5432,
+#         'PASSWORD': '45c5cac1a6c555f3a2b099d1721fa20e698d2f7b6bab0f534023760b9489f90e',
+#     }
+# }
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
